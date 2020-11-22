@@ -1,6 +1,7 @@
-{-|
---  Introdução à Tarefa 5
--- 	 	Objetivo da Tarefa
+{-
+
+    --  Introdução à Tarefa 5
+    -- 	 	Objetivo da Tarefa
 O  objetivo desta Tarefa era implementarmos todas as tarefas realizadas até agora numa interface gráfica. Para esse efeito foi usado o Gloss , uma biblioteca que permite criar
 jogos , tal como o Excite Bike que nós desenvolvemos.
 
@@ -24,7 +25,6 @@ Um dos grandes problemas encontrados foi aprender a usar esta biblioteca , o Glo
 foi bastante simples.
 
 Outro dos grandes problemas encontrados foi o facto de trabalharmos com imagens e termos de ampliar, rodar, transforma-las de modo a deixar o jogo "jogável".
-
 -}
 
 
@@ -47,15 +47,15 @@ import GHC.Float
 -- __NB:__ Esta Tarefa é completamente livre. Deve utilizar a biblioteca <http://hackage.haskell.org/package/gloss gloss> para animar o jogo, e reutilizar __de forma completa__ as funções das tarefas anteriores.
 main :: IO ()
 main = do 
-    Just motaAzul <- loadJuicy "MotaAzul.png"
-    Just motaVerde <- loadJuicy "MotaVerde.png"
-    Just menu <- loadJuicy "Menu.png"
-    Just background <- loadJuicy "Background.png"
-    Just seta <- loadJuicy "Selecao.png"
-    Just verdeVence <- loadJuicy "VerdeVencedor.png"
-    Just azulVence <- loadJuicy "AzulVencedor.png"
-    Just morto <- loadJuicy "CaveiraPreta.png"
-    Just instrucoes <- loadJuicy "Instrucoes.png"
+    Just motaAzul <- loadJuicy "Tarefa5_Resources/MotaAzul.png"
+    Just motaVerde <- loadJuicy "Tarefa5_Resources/MotaVerde.png"
+    Just menu <- loadJuicy "Tarefa5_Resources/Menu.png"
+    Just background <- loadJuicy "Tarefa5_Resources/Background.png"
+    Just seta <- loadJuicy "Tarefa5_Resources/Selecao.png"
+    Just verdeVence <- loadJuicy "Tarefa5_Resources/VerdeVencedor.png"
+    Just azulVence <- loadJuicy "Tarefa5_Resources/AzulVencedor.png"
+    Just morto <- loadJuicy "Tarefa5_Resources/CaveiraPreta.png"
+    Just instrucoes <- loadJuicy "Tarefa5_Resources/Instrucoes.png"
     play dm
         (greyN 0.5) 
         fr 
